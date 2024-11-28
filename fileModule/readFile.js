@@ -10,11 +10,11 @@ const server=http.createServer((req,res)=>{
 
 
         if(err){
-        res.writeHead(404,{'content-type':'text/html'});
-        res.end('<h1> 404 Not Found</h1>');
+        res.writeHead(404,{'content-type':'text/html'});//
+        res.end('<h1> 404 Not Found</h1>');//
 
             // throw err;
-            //the above code will stop the ececution entirely and throw the error in the log file
+            //the above code will stop the ececution entirely and throw the error in the terminal
 
             return;
  
