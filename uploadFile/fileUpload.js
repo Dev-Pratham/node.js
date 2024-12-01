@@ -28,6 +28,7 @@ const server=http.createServer((req,res)=>{
             else{
                 res.write("file uploaded and moved");
                 res.end();
+                return;
             }
         });
         
@@ -45,6 +46,7 @@ else{
     res.write('<input type="submit" value="submit">');
     res.write('</form>');
     res.end();
+    return;
 
 }
 
@@ -55,3 +57,6 @@ server.listen(3000,()=>{
 })
 
 
+// Debugging:
+
+// Add console.log(fields, files) after form.parse() to debug uploaded files and fields.
